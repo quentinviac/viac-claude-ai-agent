@@ -20,19 +20,77 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        h1 {
+        h1, h2 {
             color: #2c3e50;
             text-align: center;
         }
+        .section {
+            margin: 40px 0;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .section:last-child {
+            border-bottom: none;
+        }
         p {
             color: #34495e;
+        }
+        .contact-info {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+        .features-list {
+            list-style: none;
+            padding: 0;
+        }
+        .features-list li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .features-list li:before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #3498db;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Welcome to VIAC AI Agent</h1>
-        <p>This is a simple webpage created by Claude, an AI assistant. Here we can showcase various AI-related content and updates.</p>
+        
+        <div class="section">
+            <h2>About Us</h2>
+            <p>VIAC AI Agent is an innovative initiative aimed at leveraging artificial intelligence to create powerful, user-friendly solutions. Our platform combines cutting-edge AI technology with practical applications to help businesses and individuals achieve their goals.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Features</h2>
+            <ul class="features-list">
+                <li>Advanced Natural Language Processing</li>
+                <li>Intelligent Task Automation</li>
+                <li>Custom AI Solution Development</li>
+                <li>Real-time Data Analysis</li>
+                <li>Seamless Integration Capabilities</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Documentation</h2>
+            <p>Access our comprehensive documentation to learn more about VIAC AI Agent's capabilities and integration options. Whether you're a developer or business user, our documentation provides detailed guides and examples to help you get started.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p>Have questions or need support? Reach out to us:</p>
+                <p>Email: contact@viacai.example.com</p>
+                <p>Support Hours: Monday - Friday, 9:00 AM - 6:00 PM EST</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
